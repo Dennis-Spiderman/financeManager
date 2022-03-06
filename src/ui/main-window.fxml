@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <MenuBar>
+        <menus>
+            <Menu mnemonicParsing="false" text="Registrar">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#registerIncomeOrExpense" text="Registrar egreso/ingreso" />
+              </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Gastos">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#seeExpenses" text="Ver gastos" />
+                  <MenuItem mnemonicParsing="false" onAction="#filterExpenses" text="Ver gastos filtrados" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Ingresos">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#seeIncomes" text="Ver ingresos" />
+                  <MenuItem mnemonicParsing="false" onAction="#filterIncomes" text="Ver ingresos filtrados" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Balance">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#seeBalance" text="Ver balance" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <Pane fx:id="MAIN_PANE" />
+   </children>
+</VBox>

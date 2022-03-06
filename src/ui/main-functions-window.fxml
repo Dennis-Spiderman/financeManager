@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="MAIN_PANE" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="270.0" layoutY="383.0" text="    " />
+      <ImageView accessibleRole="BUTTON" fitHeight="150.0" fitWidth="200.0" layoutX="208.0" layoutY="128.0" onMouseClicked="#seeBalance" onMouseMoved="#showTooltipBalance" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../icon/balance.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="IMAGEV_EXPENSES" accessibleRole="BUTTON" fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="128.0" onMouseClicked="#seeIncomes" onMouseMoved="#showTooltipIncomes" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../icon/kisspng-computer-icons-expense-money-coin-5ad9c1d34e8b51.3289041915242203713217.png" />
+         </image>
+      </ImageView>
+      <ImageView accessibleRole="BUTTON" fitHeight="163.0" fitWidth="158.0" layoutX="402.0" layoutY="128.0" onMouseClicked="#seeExpenses" onMouseMoved="#showTooltipExpenses" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../icon/loss.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>
